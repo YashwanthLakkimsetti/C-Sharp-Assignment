@@ -1,0 +1,93 @@
+Pattern A
+
+using System;
+
+public class PatternA
+{
+    public static void Main(string[] args)
+    {
+        for (int ia = 1; ia <= 10; ia++)
+        {
+            for (int jk = 1; jk <= ia; jk++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+
+Pattern B
+
+using System;
+
+public class PatternB
+{
+
+    public static void Main(string[] args)
+    {
+        for (int ia = 10; ia >= 1; ia--)
+        {
+            for (int jk = 1; jk <= ia; jk++)
+            {
+                Console.Write("*");
+            }
+
+            Console.WriteLine();
+        }
+    }
+}
+
+
+Pattern C
+
+using System;
+public class PatternC
+{
+    public static void Main()
+    {
+
+        for (int ia = 1; ia <= 10; ia++)
+        {
+            
+            for (int jk = 0; jk < ia; jk++)
+            {
+                Console.Write(" ");
+            }
+
+            for (int jk = 1; jk <= (10 - ia); jk++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+        Console.ReadLine();
+    }
+}
+
+Pattern D
+
+using System;
+
+public class PatternD
+{
+    public static void Main(string[] args)
+    {
+
+
+        for (int ia = 1; ia <= 10; ia++)
+        {
+            for (int jk = 1; jk <= 10 - ia; jk++)
+            {
+                Console.Write(" ");
+            }
+            for (int kl = 1; kl <= ia; kl++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine("");
+        }
+
+    }
+}
